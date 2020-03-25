@@ -30,7 +30,7 @@ $(function() {
 <script>
   $(document).ready(function() {
     $('#fullpage').fullpage({
-      scrollingSpeed: 600,
+      scrollingSpeed: 700,
       controlArrows: false,
       // scrollOverflow:true,
       <?php
