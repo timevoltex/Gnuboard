@@ -1,6 +1,6 @@
 <?php
 if (!defined('_GNUBOARD_')) exit;
-define('G5_MYSQL_HOST', 'dbadmin');
+define('G5_MYSQL_HOST', 'db.connple.com');
 define('G5_MYSQL_USER', 'yeoneum');
 define('G5_MYSQL_PASSWORD', 'dusdma0625!m');
 define('G5_MYSQL_DB', 'dbyeoneum');
