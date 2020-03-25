@@ -79,7 +79,7 @@ border:1px solid #558ab7 !important;
 .hd_pops_footer .hd_pops_close {background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {background: #000000; width: 100%; position: fixed; height:130px}
+#hd {background: #000000; width: 100%; position: fixed; height:110px}
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
 #tnb {border-bottom:1px solid #383838;margin:0 auto}
@@ -188,12 +188,14 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 .main-text .light{font-size:20px; letter-spacing:-0.05px; line-height:40px;}
 
 /* 내려가는 버튼 */
-.goDown{height: 130px; width: 178px;float:right}
-.goDown > p{font-size:21px;}
-.goDown i {transform: translateX(-32px); font-size: 32px}
+.goDown{height: 130px; width: 178px;float:right;border:none; background:white;}
+.goDown.black{background:black; color:white}
+.btn-inner{padding:45px 44px 27px 44px; text-align:left}
+.goDown  p{font-size:19px;}
+.goDown i {font-size: 32px}
 /* 버튼 텍스트 */
-.normal.value{transform:translateX(-8px)}
-.normal.contact{transform:translateX(5px)}
+.normal.value{}
+.normal.contact{}
 
 /* 2nd section */
 .mission{color: white; box-shadow: rgba(0,0, 0,0.85) 0px 0px 0px 2000px inset;}
@@ -206,8 +208,8 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 .value > div{padding: 371px 0;}
 .left-content{float:left; width:400px;}
 .value-text{padding-top:36px;}
-.value-text .bold{font-size:30px; letter-spacing: -1px;line-height:40px;}
-.value-text .light{font-size:30px; letter-spacing: -0.5px;line-height:40px;}
+.value-text .bold{font-size:40px; letter-spacing: -1px;line-height:40px;}
+.value-text .light{font-size:20px; letter-spacing: -0.5px;line-height:40px;}
 .value-img{width: 1112px; transform:translateX(-36%)}
 .value-img > img{width: 1112px;}
 
