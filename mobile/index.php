@@ -111,7 +111,7 @@ include_once(G5_MOBILE_PATH . '/head.php');
     <div class="btn-wrapper">
       <button type="button" class="goDown black">
       <div class="btn-inner">
-        <p class="normal">VALUE</p>
+        <p class="normal">CONTACT</p>
         <i style="font-size:1.5em" class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
       </div>
     </button>
