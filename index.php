@@ -35,8 +35,10 @@ include_once(G5_PATH . '/head.php');
     </div>
     <div class="btn-wrapper">
       <button type="button" class="goDown">
-        <p class="normal">MISSION</p>
-        <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        <div class="btn-inner">
+          <p class="normal">MISSION</p>
+          <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        </div>
       </button>
     </div>
   </div>
@@ -57,8 +59,10 @@ include_once(G5_PATH . '/head.php');
     </div>
     <div class="btn-wrapper">
       <button type="button" class="goDown">
-        <p class="normal value">VALUE</p>
-        <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        <div class="btn-inner">
+          <p class="normal value">VALUE</p>
+          <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        </div>
       </button>
     </div>
   </div>
@@ -72,6 +76,7 @@ include_once(G5_PATH . '/head.php');
       </div>
       <div class="value-text">
         <p class="bold">'명작이 되도록 완벽하게'</p>
+        <br>
         <p class="light">스타트업은 대기업과 다르게, <br />
           본인 역량에 도움이 될 다양한 <br />
           업무를 해볼 수 있다는 것이 특징입니다.<br />
@@ -120,9 +125,11 @@ include_once(G5_PATH . '/head.php');
           모든 사람들 간의 신뢰를 위해 항상 노력합니다.
         </p>
       </div>
-      <button type="button" class="goDown">
-        <p class="normal contact">CONTACT</p>
-        <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+      <button type="button" class="goDown black">
+        <div class="btn-inner">
+          <p class="normal contact">CONTACT</p>
+          <i class="fa fa-caret-down" aria-hidden="true"></i><span class="sound_only">상단으로</span>
+        </div>
       </button>
     </div>
   </div>
@@ -141,7 +148,7 @@ include_once(G5_PATH . '/head.php');
     <div class="contact-box">
       <p class="light"><span class="bolder">이메일</span>help@connple.com</p>
       <p class="light"><span class="bolder">연락처</span>010-8688-1512(09-18시, 평일운영)</p>
-      <p class="light"><span class="bolder addr">주 소</span>강원도 춘천시 강원대학길1, KNU스타트업큐브 B동 214호</p>
+      <p class="light"><span class="bolder addr">주&nbsp; &nbsp; 소</span>강원도 춘천시 강원대학길1, KNU스타트업큐브 B동 214호</p>
     </div>
   </div>
   <!--
