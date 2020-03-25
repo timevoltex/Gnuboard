@@ -34,7 +34,7 @@ $(function() {
       controlArrows: false,
       // scrollOverflow:true,
       <?php
-      if(G5_IS_MOBILE) {
+      if (G5_IS_MOBILE) {
       ?>
         onLeave: function(origin, destination, direction) {
           console.log(origin.index);
@@ -43,34 +43,35 @@ $(function() {
           if (origin.index == 1 && direction == 'down') {
             $('#hd').css('background', 'transparent');
             $('#gnb_open').css('color', 'black');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL?>/connple logo.png')
+            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/connple logo.png')
           }
           if (origin.index == 2 && direction == 'up') {
             $('#hd').css('background', 'black');
             $('#gnb_open').css('color', 'white');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL?>/Connple-white.png')
+            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/Connple-white.png')
           }
         },
       <?php } ?>
     });
 
   });
-
-  
+  $(document).on('click', '.goDown, .goDown', function() {
+    fullpage_api.moveSectionDown();
+  });
 </script>
 <script>
-  <?php if(!G5_IS_MOBILE){?>
-  $(document).ready(function(){
-    $('#pagepiling').pagepiling({
-      easing: 'linear',
-      navigation:false,
+  <?php if (!G5_IS_MOBILE) { ?>
+    $(document).ready(function() {
+      $('#pagepiling').pagepiling({
+        easing: 'linear',
+        navigation: false,
 
+      })
     })
-  })
-  $(document).on('click', '.goDown, .goDown', function() {
-    $.fn.pagepiling.moveSectionDown();
-  });
-<?php }?>
+    $(document).on('click', '.goDown, .goDown', function() {
+      $.fn.pagepiling.moveSectionDown();
+    });
+  <?php } ?>
 </script>
 </div>
 <!--fullpage-->
