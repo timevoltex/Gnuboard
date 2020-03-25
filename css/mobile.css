@@ -58,7 +58,7 @@ ul {list-style:none}
 -moz-box-shadow:0 0 5px rgba(55,55,5,0.4);
 box-shadow:0 0 5px rgba(55,55,5,0.4)}
 
-.nav-wrapper{display:flex; padding:50px 20px; justify-content:space-between}
+.nav-wrapper{display:flex; padding:53px 22px; justify-content:space-between}
 .nav{list-style: none;}
 .nav-menu{color:#878787; font-weight:bold; line-height:24px; font-size:14px;}
 .nav-menu.active{color:#000; text-decoration:underline; }
