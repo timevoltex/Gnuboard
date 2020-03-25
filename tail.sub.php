@@ -28,14 +28,14 @@ $(function() {
 
 <?php run_event('tail_sub'); ?>
 <script>
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      scrollingSpeed: 700,
-      controlArrows: false,
-      // scrollOverflow:true,
-      <?php
-      if (G5_IS_MOBILE) {
-      ?>
+  <?php
+  if (G5_IS_MOBILE) {
+  ?>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        scrollingSpeed: 700,
+        controlArrows: false,
+        // scrollOverflow:true,
         onLeave: function(origin, destination, direction) {
           console.log(origin.index);
           console.log(direction);
@@ -51,16 +51,14 @@ $(function() {
             $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/Connple-white.png')
           }
         },
-      <?php } ?>
-    });
+      });
 
-  });
-  $(document).on('click', '.goDown, .goDown', function() {
-    fullpage_api.moveSectionDown();
-  });
-</script>
-<script>
-  <?php if (!G5_IS_MOBILE) { ?>
+    });
+    $(document).on('click', '.goDown, .goDown', function() {
+      fullpage_api.moveSectionDown();
+    });
+  <?php } else{
+    ?>
     $(document).ready(function() {
       $('#pagepiling').pagepiling({
         easing: 'linear',
@@ -71,7 +69,7 @@ $(function() {
     $(document).on('click', '.goDown, .goDown', function() {
       $.fn.pagepiling.moveSectionDown();
     });
-  <?php } ?>
+    <?php } ?>
 </script>
 </div>
 <!--fullpage-->
