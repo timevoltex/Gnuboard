@@ -34,7 +34,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         <button type="button" id="gnb_open" class="hd_opener"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"> 메뉴열기</span></button>
 
         <div id="gnb" class="hd_div">
-          <div style="display:flex; padding:50px 20px; justify-content:space-between">
+          <div class="nav-wrapper">
             <ul class="nav">
               <li><a class="nav-menu active" href="/">회사소개</a></li>
               <li><a class="nav-menu" href="#">사업영역</a></li>

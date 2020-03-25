@@ -8,7 +8,6 @@ if (defined('G5_THEME_PATH')) {
 ?>
 
 <div id="ft">
-
   <div id="ft_wr">
     <div class="ft_cnt">
       <p class="normal">
