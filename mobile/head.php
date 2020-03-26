@@ -119,7 +119,6 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
         });
         $('.overlay').fadeIn(400);
         $('.hd_div_closer').fadeIn(400);
-        // $('html, body').addClass('hidden');
         // if ($hd_layer.is(":visible")) {
         //   $hd_layer.hide();
         //   $this.find("span").text("열기");
