@@ -42,12 +42,12 @@ $(function() {
           console.log(destination);
           if (origin.index == 1 && direction == 'down') {
             $('#hd').css('background', 'transparent');
-            $('#gnb_open').css('color', 'black');
+            $('.hd_opener').css('color', 'black');
             $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/connple logo.png')
           }
           if (origin.index == 2 && direction == 'up') {
             $('#hd').css('background', 'black');
-            $('#gnb_open').css('color', 'white');
+            $('.hd_opener').css('color', 'white');
             $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/Connple-white.png')
           }
         },
