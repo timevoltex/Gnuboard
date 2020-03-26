@@ -54,7 +54,7 @@ if (G5_IS_MOBILE) {
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
-<title><?php echo $g5_head_title; ?></title>
+<title>CONNPLE</title>
 <?php
 if (defined('G5_IS_ADMIN')) {
     if(!defined('_THEME_PREVIEW_'))
