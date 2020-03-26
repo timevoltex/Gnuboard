@@ -63,7 +63,6 @@ $(function() {
       $('#pagepiling').pagepiling({
         easing: 'linear',
         navigation: false,
-
       })
     })
     $(document).on('click', '.goDown, .goDown', function() {
