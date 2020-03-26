@@ -60,7 +60,7 @@ include_once(G5_MOBILE_PATH . '/head.php');
       <div class="container">
         <img src="<?php echo G5_IMG_URL ?>/value.png" alt="text">
         <div class="value-text">
-          <p class="bold" style="">
+          <p class="bold">
             '명작이 되도록 완벽하게'
           </p>
           <p class="light">
