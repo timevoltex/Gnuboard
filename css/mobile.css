@@ -35,6 +35,7 @@ ul {list-style:none}
 }
 /* test */
 .hd_div_closer{display:none;z-index:99999; color:black!important}
+.overlay{height:100%;width:100%;position:fixed;background-color:rgba(0, 0, 0, 0.85); z-index:99; display:none; top:0; left:0}
 
 
 /* 팝업레이어 */
@@ -56,7 +57,7 @@ ul {list-style:none}
 #logo img {vertical-align:middle;width:76px;}
 #gnb_open {width:15px;border:0;background-size:70%;color:#fff;background:none;}
 #gnb_open > i {font-size: 15px;}
-#gnb {display:none;background:#FFF;position:fixed;top:0;right:0;z-index:9999;width:269px;;max-width:400px;height:100%;overflow-y:auto;
+#gnb {display:none;background:#FFF;position:fixed;top:0;right:-100%;z-index:9999;width:70%;max-width:400px;height:100%;overflow-y:auto;
 -webkit-box-shadow:0 0 5px rgba(55,55,5,0.4);
 -moz-box-shadow:0 0 5px rgba(55,55,5,0.4);
 box-shadow:0 0 5px rgba(55,55,5,0.4)}
