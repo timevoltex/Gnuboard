@@ -33,7 +33,6 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
 
     <button type="button" id="gnb_open" class="hd_div_closer"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"> 메뉴열기</span></button>
     <button type="button" id="gnb_open" class="hd_opener"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"> 메뉴열기</span></button>
-
     <div id="gnb" class="hd_div">
       <div class="nav-wrapper">
         <ul class="nav">
@@ -46,9 +45,9 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
       </div>
       <?php //echo outlogin('basic'); // 외부 로그인 
       ?>
-
     </div>
-
+    <div class="overlay"></div>
+    
     <!-- <button type="button" id="user_btn" class="hd_opener"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">사용자메뉴</span></button> -->
     <!-- <div class="hd_div" id="user_menu">
             <button type="button" id="user_close" class="hd_closer"><span class="sound_only">메뉴 닫기</span><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -98,7 +97,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
                 <button id="size_up" onclick="font_resize('container', 'ts_up ts_up2', 'ts_up2', this);"><img src="<?php echo G5_URL; ?>/img/ts03.png" width="20" alt="더크게"></button>
             </div> -->
   </div>
-
+  
   <script>
     $(function() {
       //폰트 크기 조정 위치 지정
@@ -114,36 +113,49 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
       $(".hd_opener").on("click", function() {
         var $this = $(this);
         var $hd_layer = $this.next(".hd_div");
+        $this.hide();
+        $hd_layer.show().animate({
+          right:0,
+        });
+        $('.overlay').fadeIn(400);
+        $('.hd_div_closer').fadeIn(400);
+        // $('html, body').addClass('hidden');
+        // if ($hd_layer.is(":visible")) {
+        //   $hd_layer.hide();
+        //   $this.find("span").text("열기");
+        // } else {
+        //   var $hd_layer2 = $(".hd_div:visible");
+        //   $hd_layer2.prev(".hd_opener").find("span").text("열기");
+        //   $hd_layer2.hide();
 
-        if ($hd_layer.is(":visible")) {
-          $hd_layer.hide();
-          $this.find("span").text("열기");
-        } else {
-          var $hd_layer2 = $(".hd_div:visible");
-          $hd_layer2.prev(".hd_opener").find("span").text("열기");
-          $hd_layer2.hide();
-
-          $hd_layer.show();
-          $(".hd_div_closer").show();
-          $this.hide();
-          $this.find("span").text("닫기");
-        }
+        //   $hd_layer.show();
+        //   $(".hd_div_closer").show();
+        //   $this.hide();
+        //   $this.find("span").text("닫기");
+        // }
       });
 
-      $(".section").on("click", function() {
-        $(".hd_div, .hd_div_closer").hide();
+      $(".overlay").on("click", function() {
+        $(".hd_div").animate({
+          right:"-100%",
+        });
+        $(this).fadeOut(400);
+        $('.hd_div_closer').hide();
         $(".hd_opener").show();
 
       });
 
       $(".hd_div_closer").on("click", function() {
         var idx = $(".hd_div_closer").index($(this));
-        $(".hd_div:visible, .hd_div_closer").hide();
+        var $this = $(this);
+        $(".hd_div:visible").animate({
+          right:"-100%",
+        });
+        $('.overlay').fadeOut(400);
+        $this.hide();
         $(".hd_opener:eq(" + idx + ")").find("span").text("열기");
         $(".hd_opener:eq(" + idx + ")").show();
       });
     });
   </script>
-
-  </div>
 </header>
