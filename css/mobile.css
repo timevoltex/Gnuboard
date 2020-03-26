@@ -34,7 +34,7 @@ ul {list-style:none}
   box-sizing:border-box;
 }
 /* test */
-.hd_div_closer{display:none;z-index:99999}
+.hd_div_closer{display:none;z-index:99999; color:black!important}
 
 
 /* 팝업레이어 */
