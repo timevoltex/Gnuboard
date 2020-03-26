@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 legend {position:absolute;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 label, input, button, select, img {vertical-align:middle}
 input, button {margin:0;padding:0;font-size:1em;font-family:'Malgun Gothic', dotum, sans-serif}
-button {cursor:pointer}
+button {cursor:pointer; outline:unset}
 input[type=text], input[type=password], input[type=submit], input[type=image], button {font-size:1em;-webkit-appearance:none}
 textarea, select {font-size:1em;font-family:'Malgun Gothic', dotum, sans-serif}
 textarea {border-radius:0;-webkit-appearance:none;font-family:'Malgun Gothic', dotum, sans-serif}
@@ -33,6 +33,9 @@ ul {list-style:none}
   -moz-box-sizing:border-box;
   box-sizing:border-box;
 }
+/* test */
+.hd_div_closer{display:none;z-index:99999}
+
 
 /* 팝업레이어 */
 #hd_pop {z-index:1000;position:relative;margin:0 auto;width:100%;height:0}
@@ -53,7 +56,7 @@ ul {list-style:none}
 #logo img {vertical-align:middle;width:76px;}
 #gnb_open {width:15px;border:0;background-size:70%;color:#fff;background:none;}
 #gnb_open > i {font-size: 15px;}
-#gnb {display:none;background:#FFF;position:fixed;top:0;right:0;z-index:99999;width:269px;;max-width:400px;height:100%;overflow-y:auto;
+#gnb {display:none;background:#FFF;position:fixed;top:0;right:0;z-index:9999;width:269px;;max-width:400px;height:100%;overflow-y:auto;
 -webkit-box-shadow:0 0 5px rgba(55,55,5,0.4);
 -moz-box-shadow:0 0 5px rgba(55,55,5,0.4);
 box-shadow:0 0 5px rgba(55,55,5,0.4)}
