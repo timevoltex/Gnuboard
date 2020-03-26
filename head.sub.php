@@ -56,7 +56,7 @@ echo '<meta name="description" content="사람과 사람을 연결하는 기업,
 echo '<meta property="og:type" content="website">'.PHP_EOL;
 echo '<meta property="og:title" content="CONNPLE">'.PHP_EOL;
 echo '<meta property="og:description" content="사람과 사람을 연결하는 기업, 컨플입니다.">'.PHP_EOL;
-echo '<meta property="og:imgage" content="http://www.connple.com/img/connple logo.png">'.PHP_EOL;
+echo '<meta property="og:image" content="http://www.connple.com/img/KakaoTalk.png">'.PHP_EOL;
 echo '<meta property="og:url" content="http://www.connple.com">'.PHP_EOL;
 
     echo $config['cf_add_meta'].PHP_EOL;
