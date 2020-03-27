@@ -106,10 +106,12 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
 
     </ul> -->
     <div class="nav-menu">
-      <a href="<?php echo G5_URL ?>">회사소개</a>
-      <a herf="#">사업소개</a>
-      <a herf="#">커넥트 피플</a>
-      <a herf="#">고객센터</a>
+    <ul>
+      <li class="active"><a href="<?php echo G5_URL ?>">회사소개</a></li>
+      <li><a herf="#">사업소개</a></li>
+      <li><a herf="#">커넥트 피플</a></li>
+      <li><a herf="#">고객센터</a></li>
+    </ul>
       </div>
   </div>
 
