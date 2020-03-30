@@ -13,6 +13,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .bolder{font-weight:900}
 .light{font-weight:300}
 
+::selection{
+  color:#fff;
+  background-color:#000
+}
 ul, dl,dt,dd {margin:0;padding:0;list-style:none}
 legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 label, input, button, select, img {vertical-align:middle;font-size:1em}
@@ -79,22 +83,22 @@ border:1px solid #558ab7 !important;
 .hd_pops_footer .hd_pops_close {background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {background: #000000; width: 100%; position: fixed; height:110px}
+#hd {background: #000000; width: 100%; position: fixed; height:105px}
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
 #tnb {border-bottom:1px solid #383838;margin:0 auto}
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
 #tnb .inner {margin:0 auto}
 
-#hd_wrapper {width: 1118px; justify-content: space-between;position:relative; display:flex; margin:0 auto;height:130px;zoom:1}
+#hd_wrapper {width: 1118px; justify-content: space-between;position:relative; display:flex; margin:0 auto;height:105px;zoom:1}
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;}
 
 #logo {margin:auto 0}
-#logo img {width: 150px;}
+#logo img {width: 110px;}
 
-.nav-menu{color: white!important; margin:auto 0}
+.nav-menu{color: #878787!important; margin:auto 0}
 .nav-menu > ul{display:flex;}
-li.active{text-decoration:underline; text-underline-position: under;}
+li.active{color:#fff; text-decoration:underline; text-underline-position: under;}
 
 .hd_sch_wr {float:left;padding:30px 0;;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
