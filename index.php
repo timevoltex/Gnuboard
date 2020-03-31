@@ -22,16 +22,21 @@ include_once(G5_PATH . '/head.php');
     <div>
       <img class="main-img" src="<?php echo G5_IMG_URL ?>/connect people white.png" alt="text">
     </div>
-    <div class="main-text">
-      <p class="bold">
-        사람들을 연결하고, 소통의 가치를 더합니다.
-      </p>
-      <p class="light">
-        컨플은 사람과 사람을 연결하는 문화를 만들기 위해
-      </p>
-      <p class="light">
-        소통의 가치를 키워나가는 중입니다.
-      </p>
+    <div class="main-text" style="display:flex">
+      <div>
+        <p class="bold">
+          사람들을 연결하고, 소통의 가치를 더합니다.
+        </p>
+        <p class="light">
+          컨플은 사람과 사람을 연결하는 문화를 만들기 위해
+        </p>
+        <p class="light">
+          소통의 가치를 키워나가는 중입니다.
+        </p>
+      </div>
+      <div class="main-bg">
+        <img src="<?php echo G5_IMG_URL ?>/firstpage.png" alt="image">
+      </div>
     </div>
     <div class="btn-wrapper">
       <button type="button" class="goDown">
@@ -92,8 +97,8 @@ include_once(G5_PATH . '/head.php');
       <div class="right-text">
         <p class="normal">믿을 수 있는</p>
         <p class="light">소비자와 사장님들간의 신뢰, 우리 회사를 거치는<br />
-        모든 사람들 간의 신뢰를 위해 항상 노력합니다.
-      </p>
+          모든 사람들 간의 신뢰를 위해 항상 노력합니다.
+        </p>
       </div>
       <div class="right-text">
         <p class="normal">소통할 수 있는</p>
