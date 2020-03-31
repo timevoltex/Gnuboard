@@ -28,8 +28,8 @@ if (G5_IS_MOBILE) {
     <div id="ft_wr">
       <div class="ft_cnt">
         <p class="normal">
-          강원도 춘천시 강원대학길1, KNU스타트업 큐브 B동 214호<br>
-          사업자 등록 번호: 111-11-11111<br>
+          강원도 춘천시 강원대학길 1, KNU스타트업 큐브 B동 214호<br>
+          사업자 등록 번호: 151-20-00854<br>
           대표: 최원준<br>
         </p>
         <p class="light">
