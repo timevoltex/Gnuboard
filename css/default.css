@@ -29,12 +29,12 @@ select {margin:0}
 p {margin:0;padding:0;word-break:break-all}
 hr {display:none}
 pre {overflow-x:scroll;font-size:1.1em}
-a{text-decoration:none; font-size:20px; margin:0 29px}
+a{text-decoration:none; font-size:20px; margin:0 29px; color:inherit}
 
 #logo > a{
   margin-left:0;
 }
-a:visited{color:#fff}
+a:visited{color:inherit}
 
 *, :after, :before {
   -webkit-box-sizing:border-box;
@@ -83,7 +83,7 @@ border:1px solid #558ab7 !important;
 .hd_pops_footer .hd_pops_close {background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {background: #000000; width: 100%; position: fixed; height:105px}
+#hd {background: #000000; width: 100%; position: fixed; height:105px; z-index:1000}
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
 #tnb {border-bottom:1px solid #383838;margin:0 auto}
@@ -99,6 +99,7 @@ border:1px solid #558ab7 !important;
 .nav-menu{color: #878787!important; margin:auto 0}
 .nav-menu > ul{display:flex;}
 li.active{color:#fff; text-decoration:underline; text-underline-position: under;}
+li.weat-active{color:#8217FF; text-decoration: underline; text-underline-position: under;}
 
 .hd_sch_wr {float:left;padding:30px 0;;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
