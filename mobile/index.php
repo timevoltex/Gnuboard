@@ -12,12 +12,15 @@ include_once(G5_MOBILE_PATH . '/head.php');
   <!-- 1st section -->
   <div class="section main">
     <div class="container">
-      <img src="<?php echo G5_IMG_URL ?>/connect people white.png" alt="text">
+      <img src="<?php echo G5_IMG_URL ?>/index/connect people white.png" alt="text">
       <div class="main-text">
         <p class="bold">사람들을 연결하고, 소통의 가치를 더합니다.</p>
         <p class="light">컨플은 사람과 사람을 연결하는 문화를 만들기 위해 <br>
           소통의 가치를 키워나가는 중 입니다.
         </p>
+      </div>
+      <div class="main-bg" style="width:275px; transform:translate(7%, 10%)">
+        <img src="<?php echo G5_IMG_URL?>/index/firstpage.png" alt="img" >
       </div>
       <div class="btn-wrapper">
         <button type="button" class="goDown">
@@ -30,9 +33,9 @@ include_once(G5_MOBILE_PATH . '/head.php');
     </div>
   </div>
   <!-- 2nd section -->
-  <div class="section mission" style="background-image:url('<?php echo G5_IMG_URL ?>/bg2.jpg');">
+  <div class="section mission" style="background-image:url('<?php echo G5_IMG_URL ?>/index/bg2.jpg');">
     <div class="container">
-      <img src="<?php echo G5_IMG_URL ?>/Mission.png" alt="text">
+      <img src="<?php echo G5_IMG_URL ?>/index/Mission.png" alt="text">
       <div class="mission-text">
         <p class="bold">'Start Bravely, Finish Perfectly'</p>
         <p class="light">
@@ -55,10 +58,10 @@ include_once(G5_MOBILE_PATH . '/head.php');
     </div>
   </div>
   <!-- 3rd section -->
-  <div class="section Value" style="background-image:url('<?php echo G5_IMG_URL ?>/bg3.jpg');">
+  <div class="section Value" style="background-image:url('<?php echo G5_IMG_URL ?>/index/bg3.jpg');">
     <div class="slide value">
       <div class="container">
-        <img src="<?php echo G5_IMG_URL ?>/value.png" alt="text">
+        <img src="<?php echo G5_IMG_URL ?>/index/value.png" alt="text">
         <div class="value-text">
           <p class="bold">
             '명작이 되도록 완벽하게'
@@ -122,7 +125,7 @@ include_once(G5_MOBILE_PATH . '/head.php');
   <!-- last section(footer) -->
   <div class="section contact">
     <div class="container">
-      <img src="<?php echo G5_IMG_URL ?>/contact.png" alt="text" style="width:162px;">
+      <img src="<?php echo G5_IMG_URL ?>/index/contact.png" alt="text" style="width:162px;">
       <div class="contact-text" style="padding-top:18px;">
         <p class="bold">컨플은 언제나 준비되어 있습니다.<br>
           추가로 궁금하신 점이 있으시다면 문의 부탁드립니다.
