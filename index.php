@@ -8,7 +8,6 @@ if (defined('G5_THEME_PATH')) {
   require_once(G5_THEME_PATH . '/index.php');
   return;
 }
-
 if (G5_IS_MOBILE) {
   include_once(G5_MOBILE_PATH . '/index.php');
   return;
@@ -20,7 +19,7 @@ include_once(G5_PATH . '/head.php');
 <div class="section main">
   <div class="container">
     <div>
-      <img class="main-img" src="<?php echo G5_IMG_URL ?>/connect people white.png" alt="text">
+      <img class="main-img" src="<?php echo G5_IMG_URL ?>/index/connect people white.png" alt="text">
     </div>
     <div class="main-text" style="display:flex">
       <div>
@@ -35,7 +34,7 @@ include_once(G5_PATH . '/head.php');
         </p>
       </div>
       <div class="main-bg">
-        <img src="<?php echo G5_IMG_URL ?>/firstpage.png" alt="image">
+        <img src="<?php echo G5_IMG_URL ?>/index/firstpage.png" alt="image">
       </div>
     </div>
     <div class="btn-wrapper">
@@ -49,10 +48,10 @@ include_once(G5_PATH . '/head.php');
   </div>
 </div>
 <!-- 2nd section -->
-<div class="section mission" style="background-image:url('<?php echo G5_IMG_URL ?>/bg2.jpg');">
+<div class="section mission" style="background-image:url('<?php echo G5_IMG_URL ?>/index/bg2.jpg');">
   <div class="container">
     <div>
-      <img class="mission-img" src="<?php echo G5_IMG_URL ?>/Mission.png" alt="text">
+      <img class="mission-img" src="<?php echo G5_IMG_URL ?>/index/Mission.png" alt="text">
     </div>
     <div class="mission-text">
       <p class="bold">'Start Bravely, Finish Perfectly'</p>
@@ -77,7 +76,7 @@ include_once(G5_PATH . '/head.php');
   <div class="container">
     <div class="left-content">
       <div>
-        <img src="<?php echo G5_IMG_URL ?>/value.png" alt="text" style="width:258.15px;">
+        <img src="<?php echo G5_IMG_URL ?>/index/value.png" alt="text" style="width:258.15px;">
       </div>
       <div class="value-text">
         <p class="bold">'명작이 되도록 완벽하게'</p>
@@ -90,7 +89,7 @@ include_once(G5_PATH . '/head.php');
         </p>
       </div>
       <div class="value-img">
-        <img src="<?php echo G5_IMG_URL ?>/bg3(new).jpg" alt="img">
+        <img src="<?php echo G5_IMG_URL ?>/index/bg3(new).jpg" alt="img">
       </div>
     </div>
     <div class="right-content">
@@ -143,7 +142,7 @@ include_once(G5_PATH . '/head.php');
 <div class="section contact">
   <div class="container">
     <div>
-      <img class="contact-img" src="<?php echo G5_IMG_URL ?>/contact.png" alt="text" style="width:324px;">
+      <img class="contact-img" src="<?php echo G5_IMG_URL ?>/index/contact.png" alt="text" style="width:324px;">
     </div>
     <div class="contact-text" style="padding-top:41px;">
       <p class="bold" style="font-size: 30px; letter-spacing:-0.75px; line-height:50px;">컨플은 언제나 준비되어 있습니다.<br />
