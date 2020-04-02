@@ -20,7 +20,7 @@ if (defined('G5_THEME_PATH')) {
       </p>
     </div>
     <div class="right-content">
-      <img src="<?php echo G5_IMG_URL ?>/connple logo.png" alt="logo">
+      <img src="<?php echo G5_IMG_URL ?>/index/connple logo.png" alt="logo">
       <p class="bold">
         자주 묻는 질문 <br>
         공지사항
