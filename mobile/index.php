@@ -19,7 +19,7 @@ include_once(G5_MOBILE_PATH . '/head.php');
           소통의 가치를 키워나가는 중 입니다.
         </p>
       </div>
-      <div class="main-bg" style="width:275px; transform:translate(7%, 10%)">
+      <div class="main-bg">
         <img src="<?php echo G5_IMG_URL?>/index/firstpage.png" alt="img" >
       </div>
       <div class="btn-wrapper">
