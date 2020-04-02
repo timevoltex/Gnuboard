@@ -54,18 +54,25 @@ $(function() {
     $(document).on('click', '.goDown, .goDown', function() {
       fullpage_api.moveSectionDown();
     });
-  <?php } else{
-    ?>
+  <?php } else {
+  ?>
     $(document).ready(function() {
       $('#pagepiling').pagepiling({
         easing: 'linear',
         navigation: false,
+        onLeave: function(index, nextIndex, direction) {
+          if (nextIndex == 3 && window.location.pathname == '/weat.php') {
+          
+            $("#ft").css("z-index", 1);
+          }
+        }
+
       })
     })
     $(document).on('click', '.goDown, .goDown', function() {
       $.fn.pagepiling.moveSectionDown();
     });
-    <?php } ?>
+  <?php } ?>
 </script>
 </div>
 <!--fullpage-->
