@@ -37,18 +37,15 @@ $(function() {
         controlArrows: false,
         // scrollOverflow:true,
         onLeave: function(origin, destination, direction) {
-          console.log(origin.index);
-          console.log(direction);
-          console.log(destination);
-          if (origin.index == 1 && direction == 'down') {
+          if ((origin.index == 1 && direction == 'down') || destination.isLast) {
             $('#hd').css('background', 'transparent');
             $('.hd_opener').css('color', 'black');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/connple logo.png')
+            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/connple logo.png')
           }
-          if (origin.index == 2 && direction == 'up') {
+          if ((origin.index == 2 && direction == 'up') || destination.isFirst) {
             $('#hd').css('background', 'black');
             $('.hd_opener').css('color', 'white');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/Connple-white.png')
+            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/Connple-white.png')
           }
         },
       });
