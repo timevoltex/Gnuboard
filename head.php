@@ -46,7 +46,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
   <div id="hd_wrapper">
 
     <div id="logo">
-      <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/Connple-white.png" alt="<?php echo $config['cf_title']; ?>"></a>
+      <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/index/Connple-white.png" alt="<?php echo $config['cf_title']; ?>"></a>
     </div>
 
     <!-- <div class="hd_sch_wr">
@@ -106,15 +106,26 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
 
     </ul> -->
     <div class="nav-menu">
-    <ul>
-      <li class="active"><a href="<?php echo G5_URL ?>">회사소개</a></li>
-      <li><a herf="#">사업소개</a></li>
-      <li><a herf="#">커넥트 피플</a></li>
-      <li><a herf="#">고객센터</a></li>
-    </ul>
-      </div>
+      <ul>
+        <li class="nav"><a href="<?php echo G5_URL ?>">회사소개</a></li>
+        <li class="nav"><a href="<?php echo G5_URL ?>/weat.php">사업소개</a></li>
+        <li class="nav"><a href="#">커넥트 피플</a></li>
+        <li class="nav"><a href="#">고객센터</a></li>
+      </ul>
+    </div>
   </div>
-
+  <script>
+    var path = window.location.pathname;
+    switch (path) {
+      case '/weat.php':
+        $("ul li:nth-child(2)").attr("class", "weat-active");
+        $('#hd').css("background", "#fff");
+        $("#logo img").attr("src", "<?php echo G5_IMG_URL?>/weat/weat_official.png");
+        break;
+      default:
+        $("ul li:nth-child(1)").attr("class", "active");
+    }
+  </script>
   <!-- <nav id="gnb">
         <h2>메인메뉴</h2>
         <div class="gnb_wrap">
@@ -212,4 +223,3 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
 <div id="pagepiling">
-  
