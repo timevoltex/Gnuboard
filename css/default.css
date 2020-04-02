@@ -184,6 +184,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #container_wr {margin:0 auto;height:100%;zoom:1}
 #aside {float:right;width:235px;padding:0;height:100%;margin:20px 0 20px 20px}
 .btn-wrapper{position:absolute; max-width:1118px; width:100%; bottom:0}
+/* main page */
 /* 1st section */
 .section.main {background:black}
 
@@ -249,8 +250,18 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 .latest_top_wr {margin:0 -10px 20px}
 .latest_top_wr:after {display:block;visibility:hidden;clear:both;content:""}
 
+/* weat page */
+.content-box {position: absolute;right: 3%;top:-7px}
+
+.outer {z-index: 2; transform: translate(31%, -11%)}
+
+.inner {display: none}
+
+.inner>img {width: 329px;}
+
+.dload > .pp-tableCell{vertical-align: unset; padding-top:185px; padding-bottom:300px; }
 /* 하단 레이아웃 */
-#ft {margin:0 auto;text-align:center; position: absolute; bottom:0; width: 100%;}
+#ft {margin:0 auto;text-align:center; position: absolute; bottom:0; width: 100%; background-color:#F3F3F3}
 #ft h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #ft_wr {max-width:1118px;margin:0;padding:40px 0;position:relative;display:inline-block;text-align:left;color:#848484}
 #ft_wr .ft_cnt {width:50%;float:left;}
