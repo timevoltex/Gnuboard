@@ -253,21 +253,41 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 /* weat page */
 /* 1st page */
 .w-main{background-size:cover;background-repeat:no-repeat;background-position:center;box-shadow:rgba(0, 0, 0, 0.6) 0px 0px 0px 2000px inset;}
+.w-main p, #downButton p{line-height: 30px;}
 #desc{text-align:center; color:#fff}
-#desc > p{line-height: 30px;}
 #desc > .normal{font-size: 30px; font-size:25px;}
 #desc .bolder{letter-spacing:-0.88px;font-size:35px;}
+/* 2nd page */
+.w-content{background:#fff}
+.app{float:left; width:60%; transform:translateX(-5%); height:675px; flex-direction:column; display:flex; justify-content:space-between}
+#leftContent{display:flex}
+#leftContent > img{width:120px;}
+
+.app-desc{margin:auto 0}
+.app-desc p{line-height:35px; color:3a3a3a}
+.app-desc .bolder{letter-spacing:-0.63px; font-size: 25px;}
+.app-desc .normal{font-size: 20px;letter-spacing: -0.5px;}
+
+.preview{position: relative;}
 .content-box {position: absolute;right: 3%;top:-7px}
-
 .outer {z-index: 2; transform: translate(31%, -11%)}
-
 .inner {display: none}
-
 .inner>img {width: 329px;}
 
-/* .dload > .pp-tableCell{vertical-align: unset; padding-top:185px; padding-bottom:300px; } */
+/* last page */
+.dload{ background-size:contain; background-repeat:no-repeat; background-position:center;box-shadow:rgba(130, 23, 255, 0.8) 0px 0px 0px 2000px inset}
+.dload .container{text-align:center; color:#fff}
+.info{padding: 50px 0}
+.info p{line-height: 40px;}
+.info .bolder{font-size: 30px; letter-spacing:-0.75px;}
+.info .normal{font-size: 20px; letter-spacing:-0.5px;}
+
+.downloadBox{display:flex; justify-content: space-between; width: 402px; margin: 0 auto;}
+.downloadBox img{width: 194px;}
 /* w-down-button */
 #downButton{position:absolute; bottom:40px; text-align:center; left:50%}
+#downButton > .bold{font-size:20px; letter-spacing:-0.5px; color:#9943FC}
+#downButton > img{width: 80px;}
 @keyframes bounce{
   100%{
     transform:translateY(-10%);
