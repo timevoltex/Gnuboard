@@ -29,20 +29,19 @@ if (G5_IS_MOBILE) {
       <div class="ft_cnt">
         <p class="normal">
           강원도 춘천시 강원대학길 1, KNU스타트업 큐브 B동 214호<br>
-          사업자 등록 번호: 151-20-00854<br>
-          대표: 최원준<br>
+          사업자 등록 번호: 151-20-00854 &nbsp;&nbsp;대표자: 최원준<br>
         </p>
         <p class="light">
           Copyright &copy; 2020 CONNPLE. All rights reserved.<br>
         </p>
       </div>
-      <div class="right-content">
+      <!-- <div class="right-content">
         <img src="<?php echo G5_IMG_URL?>/index/connple logo.png" alt="logo">
         <p class="bold">
           자주 묻는 질문 <br>
             공지사항      
       </p>
-      </div>
+      </div> -->
       <?php
       //공지사항
       // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
