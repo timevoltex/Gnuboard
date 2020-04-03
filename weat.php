@@ -42,7 +42,7 @@ if (G5_IS_MOBILE) {
         <img src="<?php echo G5_IMG_URL ?>/weat/search_01.png" alt="icon" style="width: 120px">
         <div style="margin: auto 0">
           <p class="bolder" style="letter-spacing:-0.63px; font-size: 25px; line-height: 35px; color: #3a3a3a">친구와 음식 취향을 분석해보세요</p>
-          <p class="normal" style="font-size: 20px; line-height: 35px; letter-spacing: -0.5px; color: #3a3a3a">모두가 만족할 수 있는 식당을 추천해드립ㄴ디ㅏ.</p>
+          <p class="normal" style="font-size: 20px; line-height: 35px; letter-spacing: -0.5px; color: #3a3a3a">모두가 만족할 수 있는 식당을 추천해드립니다.</p>
         </div>
       </div>
       <div id="leftContent" style="display:flex">
