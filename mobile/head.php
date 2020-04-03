@@ -36,18 +36,31 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
     <div id="gnb" class="hd_div">
       <div class="nav-wrapper">
         <ul class="nav">
-          <li><a class="nav-menu active" href="/">회사소개</a></li>
-          <li><a class="nav-menu" href="#">사업영역</a></li>
+          <li><a class="nav-menu" href="/">회사소개</a></li>
+          <li><a class="nav-menu" href="/weat.php">사업영역</a></li>
           <li><a class="nav-menu" href="#">커넥트 피플</a></li>
           <li><a class="nav-menu" href="#">고객센터</a></li>
         </ul>
         <!-- <button type="button" id="gnb_close" class="hd_closer"><span class="sound_only">메뉴 닫기</span><i style="font-size:15px;" class="fa fa-times" aria-hidden="true"></i></button> -->
       </div>
+      <script>
+        var path = window.location.pathname;
+        switch (path) {
+          case '/weat.php':
+            $("ul li:nth-child(2)").attr("class", "weat-active");
+            $('#hd').css("background", "#fff");
+            $('#hd_wrapper #gnb_open:nth-child(3)').css('color', '#000');
+            $("#logo img").attr("src", "<?php echo G5_IMG_URL ?>/weat/weat_official.png");
+            break;
+          default:
+            $("ul li:nth-child(1)").attr("class", "active");
+        }
+      </script>
       <?php //echo outlogin('basic'); // 외부 로그인 
       ?>
     </div>
     <div class="overlay"></div>
-    
+
     <!-- <button type="button" id="user_btn" class="hd_opener"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">사용자메뉴</span></button> -->
     <!-- <div class="hd_div" id="user_menu">
             <button type="button" id="user_close" class="hd_closer"><span class="sound_only">메뉴 닫기</span><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -97,7 +110,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
                 <button id="size_up" onclick="font_resize('container', 'ts_up ts_up2', 'ts_up2', this);"><img src="<?php echo G5_URL; ?>/img/ts03.png" width="20" alt="더크게"></button>
             </div> -->
   </div>
-  
+
   <script>
     $(function() {
       //폰트 크기 조정 위치 지정
@@ -115,7 +128,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
         var $hd_layer = $this.next(".hd_div");
         $this.hide();
         $hd_layer.show().animate({
-          right:0,
+          right: 0,
         });
         $('.overlay').fadeIn(400);
         $('.hd_div_closer').fadeIn(400);
@@ -136,7 +149,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
 
       $(".overlay").on("click", function() {
         $(".hd_div").animate({
-          right:"-100%",
+          right: "-100%",
         });
         $(this).fadeOut(400);
         $('.hd_div_closer').hide();
@@ -148,7 +161,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
         var idx = $(".hd_div_closer").index($(this));
         var $this = $(this);
         $(".hd_div:visible").animate({
-          right:"-100%",
+          right: "-100%",
         });
         $('.overlay').fadeOut(400);
         $this.hide();
