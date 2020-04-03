@@ -4,7 +4,7 @@ include_once('./_head.php');
 ?>
 
 <div id="fullpage">
-  <div class="section" style="background-image:url('<?php echo G5_IMG_URL ?>/weat/wbg1.png')">
+  <div class="section w-main" style="background-image:url('<?php echo G5_IMG_URL ?>/weat/wbg1.png')">
     <div class="container">
       <div class="main-desc">
         <p class="normal">내 입맛에 맞는 식당이 있는줄 모르고
@@ -23,7 +23,7 @@ include_once('./_head.php');
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section w-content">
     <div class="container">
       <div class="app">
         <div class="content-box outer">
