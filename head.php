@@ -121,6 +121,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
         $("ul li:nth-child(2)").attr("class", "weat-active");
         $('#hd').css("background", "#fff");
         $("#logo img").attr("src", "<?php echo G5_IMG_URL?>/weat/weat_official.png");
+        $("#logo a").attr("href", "<?php echo G5_URL?>/weat.php");
         break;
       default:
         $("ul li:nth-child(1)").attr("class", "active");
