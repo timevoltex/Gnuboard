@@ -3,7 +3,7 @@ include_once('./_common.php');
 include_once('./_head.php');
 ?>
 
-<div id="fullpage">
+<div id="fullpage" class="weat">
   <div class="section w-main" style="background-image:url('<?php echo G5_IMG_URL ?>/weat/wbg1.png')">
     <div class="container">
       <div class="main-desc">
