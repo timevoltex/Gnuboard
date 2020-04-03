@@ -31,27 +31,29 @@ $(function() {
   <?php
   if (G5_IS_MOBILE) {
   ?>
+    var path = window.location.pathname;
     $(document).ready(function() {
       $('#fullpage').fullpage({
         scrollingSpeed: 700,
         controlArrows: false,
         // scrollOverflow:true,
         onLeave: function(origin, destination, direction) {
-          if ((origin.index == 1 && direction == 'down') || destination.isLast) {
-            $('#hd').css('background', 'transparent');
-            $('.hd_opener').css('color', 'black');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/connple logo.png')
+          if (path == '/') {
+            if ((origin.index == 1 && direction == 'down') || destination.isLast) {
+              $('#hd').css('background', 'transparent');
+              $('.hd_opener').css('color', 'black');
+              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/connple logo.png')
+            }
+            if ((origin.index == 2 && direction == 'up') || destination.isFirst) {
+              $('#hd').css('background', 'black');
+              $('.hd_opener').css('color', 'white');
+              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/Connple-white.png')
+            }
           }
-          if ((origin.index == 2 && direction == 'up') || destination.isFirst) {
-            $('#hd').css('background', 'black');
-            $('.hd_opener').css('color', 'white');
-            $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/Connple-white.png')
-          }
-        },
+        }
       });
-
     });
-    $(document).on('click', '.goDown, .goDown', function() {
+    $(document).on('click', '.goDown, .goDown, .downButton', function() {
       fullpage_api.moveSectionDown();
     });
   <?php } else {
@@ -62,7 +64,7 @@ $(function() {
         navigation: false,
         onLeave: function(index, nextIndex, direction) {
           if (nextIndex == 3 && window.location.pathname == '/weat.php') {
-          
+
             $("#ft").css("z-index", 1);
           }
         }
