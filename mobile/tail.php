@@ -12,20 +12,19 @@ if (defined('G5_THEME_PATH')) {
     <div class="ft_cnt">
       <p class="normal">
         강원도 춘천시 강원대학길1, KNU스타트업 큐브 B동 214호<br>
-        사업자 등록 번호: 111-11-11111<br>
-        대표: 최원준<br>
+        사업자 등록 번호: 151-20-00854 &nbsp;&nbsp;대표자: 최원준<br>
       </p>
       <p class="light">
         Copyright &copy; 2020 CONNPLE. All rights reserved.<br>
       </p>
     </div>
-    <div class="right-content">
+    <!-- <div class="right-content">
       <img src="<?php echo G5_IMG_URL ?>/index/connple logo.png" alt="logo">
       <p class="bold">
         자주 묻는 질문 <br>
         공지사항
       </p>
-    </div>
+    </div> -->
     <?php
     if (G5_DEVICE_BUTTON_DISPLAY && G5_IS_MOBILE) { ?>
       <!-- <a href="<?php //echo get_device_change_url(); ?>" id="device_change">PC 버전으로 보기</a> -->
