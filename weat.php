@@ -25,35 +25,35 @@ if (G5_IS_MOBILE) {
   <div class="container">
     <div class="app">
       <div id="leftContent">
-        <img src="<?php echo G5_IMG_URL ?>/weat/hashtag_01.png" alt="icon">
+        <img src="<?php echo G5_IMG_URL ?>/weat/hashtag.png" alt="icon">
         <div class="app-desc">
           <p class="bolder">식사에 집중할 수 있도록 정확하고 편리하게</p>
           <p class="normal">해쉬태그 기반으로 정확하게 추천해드립니다.</p>
         </div>
       </div>
       <div id="leftContent">
-        <img src="<?php echo G5_IMG_URL ?>/weat/creat_01.png" alt="icon">
+        <img src="<?php echo G5_IMG_URL ?>/weat/create.png" alt="icon">
         <div class="app-desc">
           <p class="bolder">빠르고 편리하게 리뷰를 남기세요.</p>
           <p class="normal">모인 리뷰는 당신에게 더 맛있는 식당을 추천할 수 있게 해줍니다.</p>
         </div>
       </div>
       <div id="leftContent">
-        <img src="<?php echo G5_IMG_URL ?>/weat/search_01.png" alt="icon">
+        <img src="<?php echo G5_IMG_URL ?>/weat/search.png" alt="icon">
         <div class="app-desc" style="margin: auto 0">
           <p class="bolder">친구와 음식 취향을 분석해보세요</p>
           <p class="normal">모두가 만족할 수 있는 식당을 추천해드립니다.</p>
         </div>
       </div>
       <div id="leftContent">
-        <img src="<?php echo G5_IMG_URL ?>/weat/win_01.png" alt="icon">
+        <img src="<?php echo G5_IMG_URL ?>/weat/win.png" alt="icon">
         <div class="app-desc">
           <p class="bolder">우리 동네 골목대장이 되어보세요!</p>
           <p class="normal">식당들을 방문해 뱃지를 받아보세요.</p>
         </div>
       </div>
       <div id="leftContent">
-        <img src="<?php echo G5_IMG_URL ?>/weat/feed_01.png" alt="icon">
+        <img src="<?php echo G5_IMG_URL ?>/weat/feed.png" alt="icon">
         <div class="app-desc">
           <p class="bolder">혼자 먹기 아까운 맛이라면</p>
           <p class="normal">식당의 단골이 되어 다른 유저들에게 추천해주세요.</p>
