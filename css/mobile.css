@@ -263,6 +263,8 @@ i{font-size:1.5em}
   .outer{transform:translate(-2%, 5%)}
   .inner{transform:translate(86%, 21%)}
   .inner>img{width:122px}
+  .desc-card{height:64px;}
+  .d-main{padding:16px 0}
   /* last page */
   .symbol{width:56px;}
   .info>.bolder{font-size:18px;}
