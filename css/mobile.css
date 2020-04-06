@@ -233,6 +233,7 @@ i{font-size:1.5em}
 }
 /* 반응형(iphone7 등 높이가 낮은 폰) */
 @media (max-height: 700px){
+  /* 1st section */
   .w-main .fp-tableCell{vertical-align: middle;}
   /* 1st page */
   .main > .fp-tableCell{padding-top:75px; vertical-align: unset;}
@@ -253,6 +254,23 @@ i{font-size:1.5em}
   /* section down button */
   .goDown{height:76px;}
   .btn-inner{font-size:10px; padding:21px 15px; transform:unset}
+
+  /* 2nd section */
+  /* 2nd page */
+  .app{height:342px}
+  .downButton{bottom:0}
+  .outer>img{width:340px}
+  .outer{transform:translate(-2%, 5%)}
+  .inner{transform:translate(86%, 21%)}
+  .inner>img{width:122px}
+  /* last page */
+  .symbol{width:56px;}
+  .info>.bolder{font-size:18px;}
+  .info>.normal{font-size:12px}
+  .downloadBox img{width:116px;}
+
+
+
 }
 
 #top_btn {position:fixed;bottom:10px;right:15px;width:50px;height:50px;line-height:36px;border:2px solid #d2d2d2;border-radius:50%;background:#fff;color:#d2d2d2;text-align:center;font-size:15px;z-index:99;
