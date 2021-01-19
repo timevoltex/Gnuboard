@@ -152,7 +152,7 @@ include_once(G5_PATH . '/head.php');
     <div class="contact-box">
       <p class="light"><span class="bolder">이메일</span>help@connple.com</p>
       <p class="light"><span class="bolder">연락처</span>010-8688-1512 (10-17시, 평일운영)</p>
-      <p class="light"><span class="bolder addr">주&nbsp; &nbsp; 소</span>강원도 춘천시 강원대학길 1, KNU스타트업큐브 B동 214호</p>
+      <p class="light"><span class="bolder addr">주&nbsp; &nbsp; 소</span>강원도 춘천시 강원대학길 1, 보듬관 703호</p>
     </div>
   </div>
   <!--

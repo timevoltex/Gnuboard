@@ -11,7 +11,7 @@ if (defined('G5_THEME_PATH')) {
   <div id="ft_wr">
     <div class="ft_cnt">
       <p class="normal">
-        강원도 춘천시 강원대학길1, KNU스타트업 큐브 B동 214호<br>
+        강원도 춘천시 강원대학길1, 보듬관 703호<br>
         사업자 등록 번호: 151-20-00854 &nbsp;&nbsp;대표자: 최원준<br>
       </p>
       <p class="light">
@@ -27,7 +27,8 @@ if (defined('G5_THEME_PATH')) {
     </div> -->
     <?php
     if (G5_DEVICE_BUTTON_DISPLAY && G5_IS_MOBILE) { ?>
-      <!-- <a href="<?php //echo get_device_change_url(); ?>" id="device_change">PC 버전으로 보기</a> -->
+      <!-- <a href="<?php //echo get_device_change_url(); 
+                    ?>" id="device_change">PC 버전으로 보기</a> -->
     <?php
     }
 

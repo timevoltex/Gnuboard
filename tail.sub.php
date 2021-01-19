@@ -33,6 +33,7 @@ $(function() {
   ?>
     var path = window.location.pathname;
     $(document).ready(function() {
+
       $('#fullpage').fullpage({
         scrollingSpeed: 700,
         controlArrows: false,
@@ -42,12 +43,12 @@ $(function() {
             if ((origin.index == 1 && direction == 'down') || destination.isLast) {
               $('#hd').css('background', 'transparent');
               $('.hd_opener').css('color', 'black');
-              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/connple logo.png')
+              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/cnnpl.png')
             }
             if ((origin.index == 2 && direction == 'up') || destination.isFirst) {
               $('#hd').css('background', 'black');
               $('.hd_opener').css('color', 'white');
-              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/Connple-white.png')
+              $('#logo img').attr('src', '<?php echo G5_IMG_URL ?>/index/cnnpl white.png')
             }
           }
         }
@@ -59,17 +60,21 @@ $(function() {
   <?php } else {
   ?>
     $(document).ready(function() {
-      $('#pagepiling').pagepiling({
-        easing: 'linear',
-        navigation: false,
-        onLeave: function(index, nextIndex, direction) {
-          if (nextIndex == 3 && window.location.pathname == '/weat.php') {
+      if (path == '/policy.php') {
+        $('#ft').css('position', 'relative')
+        $('body, html').css('overflow', 'unset');
+      } else {
 
-            $("#ft").css("z-index", 1);
+        $('#pagepiling').pagepiling({
+          easing: 'linear',
+          navigation: false,
+          onLeave: function(index, nextIndex, direction) {
+            if (nextIndex == 3 && window.location.pathname == '/weat.php') {
+              $("#ft").css("z-index", 1);
+            }
           }
-        }
-
-      })
+        })
+      }
     })
     $(document).on('click', '.goDown, .goDown', function() {
       $.fn.pagepiling.moveSectionDown();

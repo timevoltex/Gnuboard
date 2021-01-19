@@ -28,7 +28,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
   <div id="hd_wrapper">
 
     <div id="logo">
-      <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/index/Connple-white.png" alt="<?php echo $config['cf_title']; ?>"></a>
+      <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/index/cnnpl white.png" alt="<?php echo $config['cf_title']; ?>"></a>
     </div>
 
     <button type="button" id="gnb_open" class="hd_div_closer"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"> 메뉴열기</span></button>
@@ -37,7 +37,7 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
       <div class="nav-wrapper">
         <ul class="nav">
           <li><a class="nav-menu" href="/">회사소개</a></li>
-          <li><a class="nav-menu" href="/weat.php">사업영역</a></li>
+          <li><a class="nav-menu" href="https://www.weat.co.kr">사업영역</a></li>
           <li><a class="nav-menu" href="#">커넥트 피플</a></li>
           <li><a class="nav-menu" href="#">고객센터</a></li>
         </ul>
@@ -51,6 +51,9 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
             $('#hd').css("background", "#fff");
             $('#hd_wrapper #gnb_open:nth-child(3)').css('color', '#000');
             $("#logo img").attr("src", "<?php echo G5_IMG_URL ?>/weat/weat_official.png");
+            break;
+          case '/send_mail.php':
+            $("ul li:nth-child(4)").attr("class", "active");
             break;
           default:
             $("ul li:nth-child(1)").attr("class", "active");

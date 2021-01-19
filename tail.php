@@ -23,38 +23,40 @@ if (G5_IS_MOBILE) {
 <hr>
 
 <!-- 하단 시작 { -->
-  <div id="ft">
+<div id="ft">
 
-    <div id="ft_wr">
-      <div class="ft_cnt">
-        <p class="normal">
-          강원도 춘천시 강원대학길 1, KNU스타트업 큐브 B동 214호<br>
-          사업자 등록 번호: 151-20-00854 &nbsp;&nbsp;대표자: 최원준<br>
-        </p>
-        <p class="light">
-          Copyright &copy; 2020 CONNPLE. All rights reserved.<br>
-        </p>
-      </div>
-      <!-- <div class="right-content">
-        <img src="<?php echo G5_IMG_URL?>/index/connple logo.png" alt="logo">
-        <p class="bold">
-          자주 묻는 질문 <br>
-            공지사항      
+  <div id="ft_wr">
+    <div class="ft_cnt">
+      <p class="normal">
+        강원도 춘천시 강원대학길 1, 보듬관 703호<br>
+        사업자 등록 번호: 151-20-00854 &nbsp;&nbsp;대표자: 최원준<br>
       </p>
-      </div> -->
-      <?php
-      //공지사항
-      // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
-      // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-      // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-      // echo latest('notice', 'notice', 4, 13);
-      ?>
-
-      <?php //echo visit(); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 
-      ?>
+      <p class="light">
+        Copyright &copy; 2020 CONNPLE. All rights reserved.<br>
+      </p>
     </div>
-    <!-- <div id="ft_catch"><img src="<?php //echo G5_IMG_URL; ?>/ft_logo.png" alt="<?php //echo G5_VERSION ?>"></div> -->
+    <div class="right-content">
+      <!-- <img src="<?php //echo G5_IMG_URL 
+                      ?>/index/connple logo.png" alt="logo"> -->
+      <a class="bold" href="<?php echo G5_URL ?>/policy.php">
+        개인정보처리방침
+      </a>
+    </div>
+    <?php
+    //공지사항
+    // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+    // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+    // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+    // echo latest('notice', 'notice', 4, 13);
+    ?>
+
+    <?php //echo visit(); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 
+    ?>
   </div>
+  <!-- <div id="ft_catch"><img src="<?php //echo G5_IMG_URL; 
+                                    ?>/ft_logo.png" alt="<?php //echo G5_VERSION 
+                                                          ?>"></div> -->
+</div>
 </div>
 
 
